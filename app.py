@@ -3,6 +3,7 @@ from flask import Flask,render_template,jsonify,request,session
 import uuid
 from judger import judgeresult
 from AI import predict_move
+import os
 app = Flask(__name__)
 
 app.secret_key = "your_secret_key"
@@ -85,7 +86,8 @@ def move():
 
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
     app.run(
         host="0.0.0.0",
-        port=10000
+        port=port
     )
