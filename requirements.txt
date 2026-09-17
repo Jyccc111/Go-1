@@ -2,3 +2,4 @@ Flask
 numpy
 sgfmill
 torch
+huggingface_hub
