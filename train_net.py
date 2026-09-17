@@ -510,7 +510,7 @@ class Policy_network(nn.Module):
             # ======================================
 
             if is_best:
-                filename_best = "Test_best_policy_network.pth"
+                filename_best = "last_policy_network.pth"
 
                 torch.save(
                     checkpoint,

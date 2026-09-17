@@ -7,7 +7,7 @@ from board import GoGame
 
 def encode_board(game, color, last_move, last1, last2):
     len_layer = 8
-    size = game.size
+    size = 19
 
     x = np.zeros(
         (23, size, size),
